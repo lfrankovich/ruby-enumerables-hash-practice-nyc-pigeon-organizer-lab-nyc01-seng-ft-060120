@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
     value.each do |inner_key, names|
       names.each do |name|
         if !result[name]
-          result = {}
+          result[name] = {}
         end
         if !result[name][key]
           !result[name][key] = []
